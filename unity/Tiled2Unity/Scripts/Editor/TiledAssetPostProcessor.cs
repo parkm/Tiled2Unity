@@ -110,7 +110,7 @@ namespace Tiled2Unity
             // Keep normals otherwise Unity will complain about needing them.
             // Normals may not be a bad idea anyhow
 #if UNITY_5_0 || UNITY_5_1 || UNITY_5_2
-            modelImporter.normalImportMode = ModelImporterTangentSpaceMode.None;
+            modelImporter.normalImportMode = ModelImporterTangentSpaceMode.Import;
 #else
             modelImporter.importNormals = ModelImporterNormals.Import;
 #endif
